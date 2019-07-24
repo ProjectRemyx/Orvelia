@@ -3,7 +3,7 @@
     box-shadow: none !important;
 
     .nav-contact{
-        margin-right: 6rem;
+        margin-right: 5rem;
     }
 }
 
@@ -11,3 +11,20 @@
     margin-right: 6rem;
 }
 
+.header-bg{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: end;
+    background-image: url("../src/imgs/krbanner.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 400px;
+
+    .header-img{
+        margin-right: 5.5em;
+    }
+}

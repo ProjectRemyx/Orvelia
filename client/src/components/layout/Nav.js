@@ -94,17 +94,9 @@ class NavbarPage extends Component {
         </MDBNavbarNav>
         <MDBNavbarNav right>
           <MDBNavItem>
-            <MDBDropdown className="nav-contact">
-              <MDBDropdownToggle nav caret>
-                <div className="d-md-inline">Contact</div>
-              </MDBDropdownToggle>
-              <MDBDropdownMenu className="dropdown-default" >
-                <MDBDropdownItem href="#!">Website</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Github</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Twitter</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Donate</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
+            <MDBNavLink className="waves-effect waves-light" to="#!">
+              <MDBIcon fab icon="github" />
+            </MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>
       </MDBCollapse>
