@@ -39,7 +39,8 @@ export default class Overview extends Component {
         return (
             <div className="overview-section">
                 <div className="overview-section-intro">
-                    <h1>Orvelia</h1>
+                    <h1><strong>Orvelia</strong></h1>
+                    <img src={require('../../../imgs/divider5.png')} style={{ maxWidth: '200px', marginTop: '-2.8em' }}alt="Divider"/>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and 
                         typesetting industry. Lorem Ipsum has been the industry's 
