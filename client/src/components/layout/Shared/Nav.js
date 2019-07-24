@@ -15,7 +15,7 @@ class NavbarPage extends Component {
   return (
     <MDBNavbar color="transparent" light expand="md">
       <MDBNavbarBrand>
-        <img src={require('../../imgs/sock.jpg')} style={{  maxWidth: '30px' }} alt="Happy Sock"/>
+        <img src={require('../../../imgs/sock.jpg')} style={{  maxWidth: '30px' }} alt="Happy Sock"/>
       </MDBNavbarBrand>
       <MDBNavbarToggler onClick={this.toggleCollapse} />
       <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>

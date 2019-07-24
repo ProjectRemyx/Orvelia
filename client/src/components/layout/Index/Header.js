@@ -5,7 +5,7 @@ export default class Header extends Component {
         return (
             <div className="header-bg">
                 <div className="header-img">
-                    <img src={require('../../imgs/trident_logo.png')} style={{ maxWidth: "300px" }} alt="KR Character"/>
+                    <img src={require('../../../imgs/zafir_basic.png')} style={{ maxWidth: "400px" }} alt="KR Character"/>
                 </div>
             </div>
         )

@@ -25,6 +25,27 @@
     height: 400px;
 
     .header-img{
-        margin-right: 5.5em;
+        margin-right: 2em;
     }
 }
+
+.overview-section{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    
+    .overview-section-details{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section{
+        margin: 1em;
+    }
+}
+

@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import './App.scss';
 
-import NavbarPage from './components/layout/Nav';
-import Header from './components/layout/Header';
+import NavbarPage from './components/layout/Shared/Nav';
+import Index from './components/layout/Index/Index';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <Router>
           <NavbarPage/>
-          <Header/>
+          <Index/>
         </Router>
       </div>
     )
