@@ -9,28 +9,28 @@ export default class Overview extends Component {
                 id: 1,
                 title: 'Hero Builds',
                 img: 'link',
-                text: 'Lorem ipsum',
+                description: 'Lorem ipsum',
                 button: 'More Details'
             },
             {
                 id: 2,
                 title: 'Equipment Info',
                 img: 'link',
-                text: 'Lorem ipsum',
+                description: 'Lorem ipsum',
                 button: 'More Details'
             },
             {
                 id: 3,
                 title: 'World Boss Strats',
                 img: 'link',
-                text: 'Lorem ipsum',
+                description: 'Lorem ipsum',
                 button: 'More Details'
             },
             {
                 id: 4,
                 title: 'Conquest Guides',
                 img: 'link',
-                text: 'Lorem ipsum',
+                description: 'Lorem ipsum',
                 button: 'More Details'
             }
         ]

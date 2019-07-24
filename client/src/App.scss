@@ -36,6 +36,7 @@
     justify-content: center;
 
     text-align: center;
+    padding: 1em 0px 1em 0px;
     
     .overview-section-details{
         display: flex;
@@ -44,8 +45,12 @@
         justify-content: center;
     }
 
+    .overview-section-intro{
+        max-width: 800px;
+    }
+
     .section{
-        margin: 1em;
+        margin: 2em;
     }
 }
 
