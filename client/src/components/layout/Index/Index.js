@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Header from '../Index/Header';
 import Overview from '../Index/Overview';
+import PatchNotes from '../Index/PatchNotes';
 
 export default class Index extends Component {
     render() {
@@ -9,6 +10,7 @@ export default class Index extends Component {
             <React.Fragment>
                 <Header/>
                 <Overview/>
+                <PatchNotes/>
             </React.Fragment>
         )
     }

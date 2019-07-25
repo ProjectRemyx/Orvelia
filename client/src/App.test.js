@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import NavbarPage from './components/layout/Nav';
+import NavbarPage from './components/layout/Shared/Nav';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
