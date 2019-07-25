@@ -28,13 +28,9 @@ body{
 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 
     height: 400px;
-
-    .header-img{
-        margin-right: 1em;
-    }
 }
 /* Header End */
 
@@ -255,3 +251,55 @@ body{
     }
 
 }
+/* Patch Notes End */
+
+/* Trident */
+
+@media screen and (max-width: 1311px){
+    .overview-section-intro{
+       p{
+           padding: 0 1.5em 0 1.5em;
+       }
+    }
+}
+
+
+/* Smaller Laptop Res */
+@media screen and (max-width: 973px)
+{
+    .patch-table-container{
+        .patch-table{
+            img{
+                width: 200px;
+                height: 60px;
+            }
+        }
+
+    }
+}
+
+/* Tablet Res */
+@media screen and (max-width: 702px){
+    .header-bg{
+        background-image: url("./imgs/vert.jpg");
+    }
+
+    .table thead tr th:nth-child(1),
+    .table tbody tr td:nth-child(1)
+    {
+      display: none;
+    } 
+}
+
+@media screen and (max-width: 501px){
+    .overview-section-intro{
+        p{
+            font-size: 12px;
+        }
+    }
+    .patch-table-container{
+        padding: 0;
+        padding-top: 1em;
+    }
+}
+
