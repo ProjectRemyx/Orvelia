@@ -20,15 +20,15 @@ class PatchNotes extends Component {
                 </MDBTableHead>
                 <MDBTableBody>
                 <tr>
-                    <td><img src={require('../../../imgs/patchnote.png')}></img></td>
+                    <td><img src={require('../../../imgs/patchnote.png')} alt="Banner"></img></td>
                     <td>[Patch Note] July 23rd</td>
                 </tr>
                 <tr>
-                    <td><img src={require('../../../imgs/kirze.png')}></img></td>
+                    <td><img src={require('../../../imgs/kirze.png')} alt="Banner"></img></td>
                     <td>[Patch Note] July's 2nd New Hero [Kirze]</td>
                 </tr>
                 <tr>
-                    <td><img src={require('../../../imgs/patchnote.png')}></img></td>
+                    <td><img src={require('../../../imgs/patchnote.png')} alt="Banner"></img></td>
                     <td>[Patch Note] July 16th Updates</td>
                 </tr>
                 </MDBTableBody>
