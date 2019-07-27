@@ -265,12 +265,13 @@ body{
     border-top: 1px solid black;
 
     .trident-logo-container{
-        padding: 1em;
+        padding: 2em;
         margin-right: 1em;
     }
 
     .trident-logo{
         max-width: 500px;
+        height: auto;
     }
 
     .trident-description{
@@ -308,6 +309,17 @@ body{
     }
 }
 
+/* Further optimization */
+@media screen and (max-width: 860px)
+{
+    .trident{
+        .trident-logo{
+            max-width: 400px;
+        }
+
+    }
+}
+
 /* Tablet Res */
 @media screen and (max-width: 702px){
     .header-bg{
@@ -331,5 +343,23 @@ body{
         padding: 0;
         padding-top: 1em;
     }
+    .trident{
+        .trident-logo{
+            max-width: 300px;
+        }
+        .trident-description{
+            padding: 1em;
+        }
+    }
 }
 
+@media screen and (max-width: 400px){
+    .trident{
+        .trident-logo{
+            max-width: 250px;
+        }
+        .trident-description{
+            padding: 0em;
+        }
+    }
+}
