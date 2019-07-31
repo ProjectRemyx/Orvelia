@@ -14,12 +14,13 @@ export function ContextController({ children }){
     useEffect(() => {
         axios
         .get(
-            `/api/heroes`)
+            'http://localhost:5000/api/heroes', { crossdomain:true })
             .then(res =>{
                 setState({
                     hero_list: res.data,
-                    heading: "All Heroes"
+                    heading: "All Heroes",
                 });
+                console.log(res.data);
             })
             .catch(err => console.log(err));
     }, []);
