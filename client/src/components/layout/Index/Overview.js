@@ -45,7 +45,7 @@ export default class Overview extends Component {
                         Orvelia is a King's Raid toolkit / guide website made by Remyx (NA). 
                         For inquiries you can reach me on Discord at Remyx#1327. The goal of
                         Orvelia is to provide a centralized area for game information that
-                        the wiki site or other fan made sites do no contain. This application
+                        the wiki site or other fan made sites do not contain. This application
                         is made in MERN and uses it's own API. I am always open to feedback and 
                         criticism. If you have any suggestions on how to improve Orvelia, please 
                         do not hesitate to contact me.  
