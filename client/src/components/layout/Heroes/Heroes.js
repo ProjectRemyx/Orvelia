@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import { Context } from '../../../context';
 import Loading from '../Loading';
 
 import Hero from '../Heroes/Hero';
 
 const Heroes = () => {
-    const [state] = useContext(COntext);
+    const [state] = useContext(Context);
     const { hero_list, heading } = state;
 
     if(hero_list === undefined){
