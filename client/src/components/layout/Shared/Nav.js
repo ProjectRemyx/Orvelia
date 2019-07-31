@@ -21,7 +21,7 @@ class NavbarPage extends Component {
       <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
         <MDBNavbarNav left>
           <MDBNavItem active>
-            <MDBNavLink to="#!">Home</MDBNavLink>
+            <MDBNavLink to="/">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
             <MDBDropdown>
@@ -29,7 +29,7 @@ class NavbarPage extends Component {
                 <div className="d-md-inline-block">Heroes</div>
               </MDBDropdownToggle>
               <MDBDropdownMenu className="dropdown-default">
-                <MDBDropdownItem href="#!">All</MDBDropdownItem>
+                <MDBDropdownItem href="/Heroes">All</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Knights</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Warriors</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Assassins</MDBDropdownItem>

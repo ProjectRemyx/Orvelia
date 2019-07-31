@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class PatchNotes extends Component {
     render(){
