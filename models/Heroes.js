@@ -83,7 +83,9 @@ const heroSchema = new Schema({
         uwreliance:{
             type: String,
             required: true
-        }
-});
+        },
+    },
+    { collection: 'heroes' },
+);
 
 module.exports = Hero = mongoose.model('hero', heroSchema);

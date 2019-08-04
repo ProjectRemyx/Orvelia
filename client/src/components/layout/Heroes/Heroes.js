@@ -3,6 +3,7 @@ import { Context } from '../../../context';
 import Loading from '../Loading';
 
 import Hero from '../Heroes/Hero';
+import Header from './Header';
 
 const Heroes = () => {
     const [state] = useContext(Context);
@@ -22,6 +23,7 @@ const Heroes = () => {
     else{
         return(
             <React.Fragment>
+            <Header/>
                 <h4 className="text-center results">{ heading }</h4>
                 <div className="row">
                     { hero_list.map(item =>(

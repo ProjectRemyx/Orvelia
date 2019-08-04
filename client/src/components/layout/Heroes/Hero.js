@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Hero = (props) =>{
     const { hero } = props;
     return(
