@@ -12,6 +12,15 @@ router.get('/', (req, res) => {
         .then(heroes => res.json(heroes))
 });
 
+//@route    GET api/heroes/knights
+//@desc     Get knight heroes
+//@access   Public
+router.get('/knights', (req, res) => {
+    Heroes.find({ class: 'Knight' })
+        .sort({ name: 1 })
+        .then(heroes => res.json(heroes))
+});
+
 //@route    POST api/heroes
 //@desc     Create a hero
 //@access   Public
