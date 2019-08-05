@@ -1,13 +1,34 @@
-import React, { useContext } from 'react';
-import { Context } from '../../../../context';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 import Loading from '../../Loading';
 
 import Knight from './Knight';
 import Header from './Header';
 
-const Heroes = () => {
-    const [state] = useContext(Context);
+const Knights = () => {
+    let initialState = {
+        hero_list: [],
+        heading: ''
+    };
+
+    const [state, setState] = useState(initialState);
     const { hero_list, heading } = state;
+
+    useEffect(() => {
+        axios
+        .get(
+            'http://localhost:5000/api/heroes/knights', { crossdomain: true })
+            .then(res => {
+                setState({
+                    hero_list: res.data,
+                    heading: "Knights",
+                });
+                console.log(res.data);
+            })
+            .catch(err => console.log(err));
+        
+    }, []);
 
     if(hero_list === undefined){
         return <Loading/>;
@@ -35,4 +56,4 @@ const Heroes = () => {
     }
 };
 
-export default Heroes;
+export default Knights;
