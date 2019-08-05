@@ -10,6 +10,7 @@ import { ContextController } from './context';
 
 import Index from './components/layout/Index/Index';
 import Heroes from './components/layout/Heroes/Heroes';
+import Knights from './components/layout/Heroes/Knights/Knights';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Index}/>
               <Route exact path="/Heroes" component={Heroes}/>
+              <Route exact path ="/Heroes/Knights" component={Knights}/>
             </Switch>
             <Footer/>
           </Router>

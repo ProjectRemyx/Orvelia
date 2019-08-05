@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 //@route    GET api/heroes/knights
 //@desc     Get knight heroes
 //@access   Public
-router.get('/knights', (req, res) => {
+router.get('/Knights', (req, res) => {
     Heroes.find({ class: 'Knight' })
         .sort({ name: 1 })
         .then(heroes => res.json(heroes))

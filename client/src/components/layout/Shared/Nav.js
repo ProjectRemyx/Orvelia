@@ -30,7 +30,7 @@ class NavbarPage extends Component {
               </MDBDropdownToggle>
               <MDBDropdownMenu className="dropdown-default">
                 <MDBDropdownItem href="/Heroes">All</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Knights</MDBDropdownItem>
+                <MDBDropdownItem href="/Heroes/Knights">Knights</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Warriors</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Assassins</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Archers</MDBDropdownItem>
