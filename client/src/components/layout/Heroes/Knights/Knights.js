@@ -17,7 +17,7 @@ const Knights = () => {
     useEffect(() => {
         axios
         .get(
-            'http://localhost:5000/api/heroes/knights', { crossdomain: true })
+            '/api/heroes/knights', { crossdomain: true })
             .then(res => {
                 setState({
                     hero_list: res.data,

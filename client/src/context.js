@@ -14,7 +14,7 @@ export function ContextController({ children }){
     useEffect(() => {
         axios
         .get(
-            'http://localhost:5000/api/heroes', { crossdomain:true })
+            '/api/heroes', { crossdomain:true })
             .then(res =>{
                 setState({
                     hero_list: res.data,
