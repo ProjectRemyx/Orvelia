@@ -8,12 +8,11 @@ import Header from './Header';
 
 const Knights = () => {
     let initialState = {
-        hero_list: [],
-        heading: ''
+        hero_list: []
     };
 
     const [state, setState] = useState(initialState);
-    const { hero_list, heading } = state;
+    const { hero_list } = state;
 
     useEffect(() => {
         axios
@@ -45,8 +44,7 @@ const Knights = () => {
         return(
             <React.Fragment>
             <Header/>
-                <h4 className="text-center results">{ heading }</h4>
-                <div className="row">
+                <div className="row results">
                     { hero_list.map(item =>(
                         <Knight key={item.id} knight={item}/>
                     ))}

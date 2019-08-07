@@ -4,8 +4,7 @@ export default class Header extends Component {
     render() {
         return (
             <div className="hero-header-bg">
-                <div className="header-img">
-                </div>
+                <h1>Hero List</h1>
             </div>
         )
     }

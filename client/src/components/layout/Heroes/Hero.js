@@ -7,7 +7,7 @@ const Hero = (props) =>{
         <div className="col-md-3">
             <div className="card mb-4 shadow-sm">
                 <div className="card-header text-center">{hero.class}</div>
-                <img className="card-img-top" src={hero.avatar} alt="Hero"/>
+                <img className="card-img-top" src={hero.avatar} style={{ maxHeight: '410px' }}alt="Hero"/>
                 <div className="card-body">
                     <h5 className="card-title">{hero.name}</h5>
                     <p className="card-text">{hero.classification}</p>

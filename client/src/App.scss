@@ -300,15 +300,34 @@ body{
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-end;
-    background-image: url("../src/imgs/heroes.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba( 0, 0, 0, 0.5)), url("../src/imgs/heroes.jpg");
 
     // background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     height: 400px;
+
+    h1{
+        margin: auto;
+        color: white;
+        font-size: 5em;
+    }
+    
 }
 /* Index Header End */
+
+.error{
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+    color: red;
+}
+
+.results{
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+}
+/* Heroes CSS End */
 
 @media screen and (max-width: 1311px){
     .overview-section-intro{
@@ -340,7 +359,14 @@ body{
         .trident-logo{
             max-width: 400px;
         }
+    }
 
+    .hero-header-bg{
+        h1{
+            margin: auto;
+            color: white;
+            font-size: 3em;
+        }
     }
 }
 

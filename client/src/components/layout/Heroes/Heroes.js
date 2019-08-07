@@ -7,7 +7,7 @@ import Header from './Header';
 
 const Heroes = () => {
     const [state] = useContext(Context);
-    const { hero_list, heading } = state;
+    const { hero_list } = state;
 
     if(hero_list === undefined){
         return <Loading/>;
@@ -16,7 +16,7 @@ const Heroes = () => {
     {
         return(
             <React.Fragment>
-                <h4 className="text-center">No heroes found</h4>
+                <h4 className="text-center error">No heroes found</h4>
             </React.Fragment>
         );
     }
@@ -24,8 +24,7 @@ const Heroes = () => {
         return(
             <React.Fragment>
             <Header/>
-                <h4 className="text-center results">{ heading }</h4>
-                <div className="row">
+                <div className="row results">
                     { hero_list.map(item =>(
                         <Hero key={item.id} hero={item}/>
                     ))}
