@@ -6,9 +6,6 @@ import Loading from '../Loading';
 const Rating = props => {
     const [name, setName] = useState({});
     const [heroClass, setClass] = useState({});
-    const [type, setType] = useState({});
-    const [classification, setClassification] = useState({});
-    const [rating, setRating] = useState({});
 
     useEffect(() => {
         axios
@@ -24,25 +21,13 @@ const Rating = props => {
                     );
                 })
                 .then(res => {
-                    let heroClass = res.data.classification;
+                    let heroClass = res.data.class;
                     setClass({ heroClass });
-                })
-                .then(res => {
-                    let type = res.data.type;
-                    setType({ type });
-                })
-                .then(res => {
-                    let classification = res.data.classification;
-                    setClassification({ classification });
-                })
-                .then(res => {
-                    let rating = res.data.rating;
-                    setRating({ rating });
                 })
                 .catch(err => console.log(err));
     }, [props.match.params.name]);
 
-    const info = [name, heroClass, type, classification, rating];
+    const info = [name, heroClass];
     for(let i = 0; i < info.length; i++)
     {
         if(info[i] === undefined || Object.keys(info[i]).length === 0)
@@ -52,9 +37,17 @@ const Rating = props => {
         else
         {
             return(
-                <Link to="/Heroes">
-                    Back to hero list
-                </Link>
+                <React.Fragment>
+                    <Link to="/Heroes">
+                        Back to hero list
+                    </Link>
+                    <div className="card">
+                        <h5 className="card-header">
+                          { name.name }
+                          <span>{heroClass.heroClass}</span>
+                        </h5>
+                    </div>
+                </React.Fragment>
             );
         }
     }
