@@ -12,6 +12,8 @@ import Index from './components/layout/Index/Index';
 import Heroes from './components/layout/Heroes/Heroes';
 import Knights from './components/layout/Heroes/Knights/Knights';
 
+import Rating from './components/layout/Heroes/Rating';
+
 class App extends Component {
   render() {
     return (
@@ -20,9 +22,10 @@ class App extends Component {
           <Router>
             <NavbarPage/>
             <Switch>
-              <Route exact path="/" component={Index}/>
-              <Route exact path="/Heroes" component={Heroes}/>
-              <Route exact path ="/Heroes/Knights" component={Knights}/>
+              <Route exact path="/" component={ Index }/>
+              <Route exact path="/Heroes" component={ Heroes }/>
+              <Route exact path ="/Heroes/Knights" component={ Knights }/>
+              <Route exact path ="/Ratings/Hero/:name" component={ Rating }/>
             </Switch>
             <Footer/>
           </Router>
