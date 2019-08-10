@@ -21,6 +21,14 @@ router.get('/Knights', (req, res) => {
         .then(heroes => res.json(heroes))
 });
 
+//@route    GET api/heroes/Clause
+//@desc     Get information on Clause
+//@access   Public
+router.get('/Clause', (req, res) => {
+    Heroes.findOne({ name: 'Clause' })
+        .then(heroes => res.json(heroes))
+});
+
 //@route    POST api/heroes
 //@desc     Create a hero
 //@access   Public
